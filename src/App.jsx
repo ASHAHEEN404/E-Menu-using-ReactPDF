@@ -1,12 +1,5 @@
-import { PDFViewer } from "@react-pdf/renderer";
-import PdfDocument from "./PdfDocument"; // Import your PdfDocument component
+import Quixote from "./PdfDocument"; // Assuming this is your PDF Document component
 
-const App = () => (
-  <div style={{ height: "100vh", width: "100vw", margin: 0 }}>
-    <PDFViewer style={{ width: "100%", height: "100%" }}>
-      <PdfDocument />
-    </PDFViewer>
-  </div>
-);
+const MobilePDFViewer = () => <Quixote />;
 
-export default App;
+export default MobilePDFViewer;
