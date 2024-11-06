@@ -1,24 +1,39 @@
 import { Page, Document, StyleSheet, Image, Font } from "@react-pdf/renderer";
-
+import img1 from "../public/1.png";
+import img2 from "../public/2.png";
+import img3 from "../public/3.png";
+import img4 from "../public/4.png";
+import img5 from "../public/5.png";
+import img6 from "../public/6.png";
+import img7 from "../public/7.png";
+import img8 from "../public/8.png";
+import img9 from "../public/9.png";
+import img10 from "../public/10.png";
+import img11 from "../public/11.png";
+import img12 from "../public/12.png";
+import img13 from "../public/13.png";
+import img14 from "../public/14.png";
+import img15 from "../public/15.png";
+import img16 from "../public/16.png";
 const Quixote = () => (
   <Document>
     <Page style={styles.body}>
-      <Image src="/public/1.png" />
-      <Image src="/public/2.png" />
-      <Image src="/public/3.png" />
-      <Image src="/public/4.png" />
-      <Image src="/public/5.png" />
-      <Image src="/public/6.png" />
-      <Image src="/public/7.png" />
-      <Image src="/public/8.png" />
-      <Image src="/public/9.png" />
-      <Image src="/public/10.png" />
-      <Image src="/public/11.png" />
-      <Image src="/public/12.png" />
-      <Image src="/public/13.png" />
-      <Image src="/public/14.png" />
-      <Image src="/public/15.png" />
-      <Image src="/public/16.png" />
+      <Image src={img1} />
+      <Image src={img2} />
+      <Image src={img3} />
+      <Image src={img4} />
+      <Image src={img5} />
+      <Image src={img6} />
+      <Image src={img7} />
+      <Image src={img8} />
+      <Image src={img9} />
+      <Image src={img10} />
+      <Image src={img11} />
+      <Image src={img12} />
+      <Image src={img13} />
+      <Image src={img14} />
+      <Image src={img15} />
+      <Image src={img16} />
     </Page>
   </Document>
 );
