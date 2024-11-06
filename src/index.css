@@ -1,6 +1,9 @@
 /* Body background color */
 body {
   background-color: #fffbe9;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* PDF-Like Component Styles */
@@ -9,51 +12,24 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 10px;
-  overflow-y: auto; /* Enables scrolling for the container */
-  padding-bottom: 40px; /* Space for the last page */
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
 /* Each "Page" */
 .pdf-page {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  border-radius: 8px;
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 /* Image Styling */
 .pdf-image {
   width: 100%;
-  height: auto;
-  max-height: 90vh; /* Constrain image height to viewport */
-  object-fit: contain;
-  border-radius: 5px;
-}
-
-/* Mobile-First Responsiveness */
-@media (max-width: 600px) {
-  .pdf-page {
-  }
-}
-
-/* Larger Screens */
-@media (min-width: 768px) {
-  .pdf-page {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .pdf-page {
-    max-width: 80%;
-  }
+  height: 100%;
+  object-fit: cover;
 }
